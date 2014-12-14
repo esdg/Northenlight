@@ -17,3 +17,25 @@ Add thoses line at the end of the body tag.
 </script>
 ```
 ## Documentation
+#### Alignement
+```
+<div nl-valign="bottom" nl-halign="left">
+```
+###### nl-valign
+| Value   | Decription |
+|---------|------------|
+| top     |            |
+| bottom  |            |
+| middle  |            |
+
+###### nl-halign
+| Value   | Decription |
+|---------|------------|
+| left    |            |
+| right   |            |
+| center  |            |
+
+#### Canvas
+```
+<div nl-canvas="h-stack">
+```
