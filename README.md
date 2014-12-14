@@ -39,3 +39,8 @@ Add thoses line at the end of the body tag.
 ```
 <div nl-canvas="h-stack">
 ```
+###### nl-canvas
+| Value   | Decription |
+|---------|------------|
+| h-stack |            |
+| v-stack |            |
