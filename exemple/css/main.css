@@ -1,0 +1,171 @@
+/*---------------------------------------------------
+ * BASE STYLES
+ *--------------------------------------------------*/
+main{
+    color: #9a9484;
+}
+.logo{
+    background: url("../img/logo.png") no-repeat center center;
+    background-size: cover;    
+}
+
+#container{
+    background: #504d48 url("../img/backgrounds/bg-001.jpg") no-repeat center center;
+    background-size: cover;
+}
+#trame{
+    background: url("../img/trame.png") repeat;
+
+}
+#page-accueil{
+    width: 730px;
+    margin-top: -60px;
+}
+/*---------------------------------------------------
+ * COMMON STYLES
+ *--------------------------------------------------*/
+/* text colors */
+.green-color{
+    color:#577053;
+}
+
+/* Logos */
+#big-logo{
+    width: 248px;
+    height: 151px;
+}
+
+/* Buttons */
+.nav-small-btn{
+    width: 64px;
+    height: 64px;  
+    margin-left: 4px;
+    margin-right: 4px;
+    transition: all 0.4s; /* transition when the mouse over */
+    transition-timing-function: ease;
+    -webkit-transition-timing-function: ease;
+}
+.nav-small-btn:hover{
+    transform: translateY(-8px);
+}
+
+.bigicon,.bigicon:hover{
+    width: 204px;
+    height: 225px;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+    color: #9a9484;
+    text-transform: uppercase;
+    line-height: 210px;
+    text-decoration: none;
+}
+
+.nav-social-btn{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+/* Icons */
+.icon-studio{
+    background: url("../img/studio-bigicone.png") no-repeat center center;
+    background-size: cover;      
+}
+.icon-matos{
+    background: url("../img/matos-bigicone.png") no-repeat center center;
+    background-size: cover;      
+}
+.icon-tarifs{
+    background: url("../img/tarifs-bigicone.png") no-repeat center center;
+    background-size: cover;      
+}
+
+
+.icon-accueil{
+    background: url("../img/nav-home.png") no-repeat center center;
+    background-size: cover;      
+}
+.icon-map{
+    background: url("../img/nav-map.png") no-repeat center center;
+    background-size: cover;      
+}
+.icon-contact{
+    background: url("../img/nav-contact.png") no-repeat center center;
+    background-size: cover;      
+}
+
+.icon-fb{
+    background: url("../img/ico-fb.png") no-repeat center center;
+    background-size: 7px 14px;
+    width: 22px;
+    height: 22px;
+    background-color: #5b5b5b;
+    border-radius: 11px;
+    transition: all 0.8s; /* transition when the mouse over */
+    transition-timing-function: ease;
+    -webkit-transition-timing-function: ease;
+}
+.icon-fb:hover{
+    background-color: #3c5b9b;
+}
+.icon-gplus{
+    background: url("../img/ico-gplus.png") no-repeat center center;
+    background-size: 13px 14px;
+    width: 22px;
+    height: 22px;
+    background-color: #7e7e7e;
+    border-radius: 11px;
+    transition: all 0.8s; /* transition when the mouse over */
+    transition-timing-function: ease;
+    -webkit-transition-timing-function: ease;
+}
+.icon-gplus:hover{
+    background-color: #dd4b39;
+}
+
+.icone-shutter{
+    background: url("../img/aperture-ico.png") no-repeat center center;
+    background-size: cover;
+    width: 37px;
+    height: 37px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+#home-nav{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+#medium-nav{
+    padding-top: 8px;
+}
+#social-nav{
+    margin-left: 69px;
+}
+#container p{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+    color: #9a9484;
+    width: 300px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 131px;
+    left:0;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 23px;
+}
+
