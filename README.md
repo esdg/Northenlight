@@ -1,7 +1,13 @@
 ![Alt text](/logo.png?raw=true "Northenlight")
 ============
-## About Northenlight
+## About Northenlight 0.0.1
+Stand-alone javascript driven layout positioning library for mobile (Android, iOS, etc.) and desktop in about xxk minified.
+
+Designer friendly. No JavaScript skills needed. Just plain CSS and HTML.
+
 ## How does it work?
+Northenlight use javascript to calculate the css position of absolute elements.
+
 ## Installation
 
 Add the line bellow in your css declarations between head tag.
@@ -44,3 +50,6 @@ Add thoses line at the end of the body tag.
 |---------|------------|
 | h-stack |            |
 | v-stack |            |
+
+
+## Demo
