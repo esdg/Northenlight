@@ -14,12 +14,12 @@ Northenlight use javascript to calculate the css position of absolute elements.
 
 ## Installation
 
-Add the line bellow in your css declarations between head tag.
+Add the line bellow in your css declarations between `<head>`.
 ```html
 <link href="css/main.css" rel="stylesheet">
 ```
 
-Add thoses line at the end of the body tag.
+Add thoses line at the end of the `<body>`.
 ```html
 <script src="js/northtenlight.js"></script>
 <script>
