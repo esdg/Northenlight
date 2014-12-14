@@ -1,7 +1,7 @@
 /*!
  * Northenlight core
  *
- * 
+ * Author : Mid or Feed Studio
  *
  * Free to use under terms of MIT license
  */
