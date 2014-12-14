@@ -22,6 +22,17 @@ Add thoses line at the end of the body tag.
   northenlight.init();
 </script>
 ```
+
+Add Northenlight atributes to your html elements in order to archive the look needed.
+
+The exemple bellow will horizontaly stack p elements inside, and dock at the bottom right of his container:
+```
+<div nl-canvas="h-stack" nl-valign="bottom" nl-halign="right">
+    <p>first</p>
+    <p>second</p>
+    <p>third</p>
+</div>
+```
 ## Documentation
 #### Alignement
 ```
