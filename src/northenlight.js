@@ -295,7 +295,3 @@
     }
     
 }(window, document));
-    
-    
-    
-var n = northenlight.init();
