@@ -1,11 +1,11 @@
 ![Alt text](/logo.png?raw=true "Northenlight")
-
-
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 ## About Northenlight 0.0.1
 Stand-alone javascript driven layout positioning library for mobile (Android, iOS, etc.) and desktop in about 6k minified.
 
@@ -17,12 +17,12 @@ Northenlight use javascript to calculate the css position of absolute elements.
 ## Installation
 
 Add the line bellow in your css declarations between head tag.
-```
+```html
 <link href="css/main.css" rel="stylesheet">
 ```
 
 Add thoses line at the end of the body tag.
-```
+```html
 <script src="js/northtenlight.js"></script>
 <script>
   northenlight.init();
@@ -32,7 +32,7 @@ Add thoses line at the end of the body tag.
 Add Northenlight atributes to your html elements in order to archive the look needed.
 
 The exemple bellow will horizontaly stack p elements inside, and dock the div at the bottom right of his container:
-```
+```html
 <div nl-canvas="h-stack" nl-valign="bottom" nl-halign="right">
     <p>first</p>
     <p>second</p>
@@ -45,7 +45,7 @@ Set every size, margin, padding and styles in the tradidtional css way. Northenl
 
 ## Documentation
 #### Alignement
-```
+```html
 <div nl-valign="bottom" nl-halign="left">
 ```
 ###### nl-valign
@@ -67,7 +67,7 @@ Horizontal alignement relatif to his parent.
 | center  |  The element is placed in the center of the parent element.                |
 
 #### Canvas
-```
+```html
 <div nl-canvas="h-stack">
 ```
 ###### nl-canvas
