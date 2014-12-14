@@ -43,18 +43,22 @@ Set every size, margin, padding and styles in the tradidtional css way. Northenl
 <div nl-valign="bottom" nl-halign="left">
 ```
 ###### nl-valign
-| Value   | Decription |
-|---------|------------|
-| top     |            |
-| bottom  |            |
-| middle  |            |
+Vertical alignement relatif to his parent.
+
+| Value   | Decription                                                                  |
+|---------|-----------------------------------------------------------------------------|
+| top     | The top of the element is aligned with the top of the parent element.       |
+| bottom  | The bottom of the element is aligned with the bottom of the parent element. |
+| middle  | The element is placed in the middle of the parent element.                  |
 
 ###### nl-halign
-| Value   | Decription |
-|---------|------------|
-| left    |            |
-| right   |            |
-| center  |            |
+Horizontal alignement relatif to his parent.
+
+| Value   | Decription                                                                 |
+|---------|----------------------------------------------------------------------------|
+| left    |  The left of the element is aligned with the left of the parent element.   |
+| right   |  The right of the element is aligned with the right of the parent element. |
+| center  |  The element is placed in the center of the parent element.                |
 
 #### Canvas
 ```
