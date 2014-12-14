@@ -45,6 +45,18 @@
         _HALIGNMODE_RIGHT_  : 'right',
         _HALIGNMODE_CENTER_ : 'center'
     }
+      var savingStyles = {
+        _TOP_               : '__TOP__',
+        _BOTTOM_            : '__BOTTOM__',
+        _LEFT_              : '__LEFT__',
+        _RIGHT_             : '__RIGHT__',
+        _MARGIN_TOP_        : '__MARGIN_TOP__',
+        _MARGIN_BOTTOM_     : '__MARGIN_BOTTOM__',
+        _MARGIN_LEFT_       : '__MARGIN_LEFT__',
+        _MARGIN_RIGHT_      : '__MARGIN_RIGHT__',
+
+    }  
+    
     
 	/*
 	 * Global vars.
@@ -69,6 +81,7 @@
 	 */
     function Northenlight(options) {
         layout();
+        window.addEventListener("resize", layout);
         return this;
 	}
     
@@ -144,20 +157,22 @@
         for (var i=elem.length-1 ; i >= 0 ; i--) {
              switch(getValignMode(elem[i])) {
                 case vAlignMode._VALIGNMODE_TOP_:
+                    elem[i].setBaseAttribute(savingStyles._MARGIN_TOP_, parseInt(window.getComputedStyle(elem[i]).marginTop));
                     elem[i].style.top = 0;
                     elem[i].style.marginTop =  parseInt(window.getComputedStyle(elem[i].parentNode).paddingTop)
-                                                + parseInt(window.getComputedStyle(elem[i]).marginTop)
+                                                + parseInt(elem[i].getAttribute(savingStyles._MARGIN_TOP_))
                                                 + "px";
                      break;
                 case vAlignMode._VALIGNMODE_BOTTOM_:
+                    elem[i].setBaseAttribute(savingStyles._MARGIN_BOTTOM_, parseInt(window.getComputedStyle(elem[i]).marginBottom));
+                     console.log(elem[i].getAttribute(savingStyles._MARGIN_BOTTOM_));
                     elem[i].style.bottom = 0;
                     elem[i].style.marginBottom =  parseInt(window.getComputedStyle(elem[i].parentNode).paddingBottom)
-                                                + parseInt(window.getComputedStyle(elem[i]).marginBottom)
+                                                + parseInt(elem[i].getAttribute(savingStyles._MARGIN_BOTTOM_))
                                                 + "px";
                      break;
                 case vAlignMode._VALIGNMODE_MIDDLE_:
                      var tempHeight = parseInt(elem[i].clientHeight);
-
                      elem[i].style.top = Math.round((parseInt(window.getComputedStyle(elem[i].parentNode).height) - tempHeight) /2) + 'px';
                      elem[i].style.bottom = Math.round((parseInt(window.getComputedStyle(elem[i].parentNode).height) - tempHeight) /2) + 'px';
                      elem[i].style.marginTop =  parseInt(window.getComputedStyle(elem[i].parentNode).paddingTop)
@@ -176,14 +191,16 @@
              switch(getHalignMode(elem[i])) {
                 case hAlignMode._HALIGNMODE_LEFT_:
                     elem[i].style.left = 0;
+                    elem[i].setBaseAttribute(savingStyles._MARGIN_LEFT_, parseInt(window.getComputedStyle(elem[i]).marginLeft));
                     elem[i].style.marginLeft =  parseInt(window.getComputedStyle(elem[i].parentNode).paddingLeft)
-                                                + parseInt(window.getComputedStyle(elem[i]).marginLeft)
+                                                + parseInt(elem[i].getAttribute(savingStyles._MARGIN_LEFT_))
                                                 + "px";
                     break;
                 case hAlignMode._HALIGNMODE_RIGHT_:
                     elem[i].style.right = 0;
+                    elem[i].setBaseAttribute(savingStyles._MARGIN_RIGHT_, parseInt(window.getComputedStyle(elem[i]).marginRight));
                     elem[i].style.marginRight =  parseInt(window.getComputedStyle(elem[i].parentNode).paddingRight)
-                                                + parseInt(window.getComputedStyle(elem[i]).marginRight)
+                                                + parseInt(elem[i].getAttribute(savingStyles._MARGIN_RIGHT_))
                                                 + "px";
                     break;
                 case hAlignMode._HALIGNMODE_CENTER_:
@@ -283,6 +300,12 @@
         }
     }); 
     
+    Object.prototype.setBaseAttribute = function(attrName, value){
+        if(!this.getAttribute(attrName)){
+            this.setAttribute(attrName, value);
+        }
+    }
+    
     /*
 	 * enable forach on array
 	 */  
@@ -295,3 +318,5 @@
     }
     
 }(window, document));
+
+
