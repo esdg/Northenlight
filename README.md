@@ -65,10 +65,10 @@ Horizontal alignement relatif to his parent.
 <div nl-canvas="h-stack">
 ```
 ###### nl-canvas
-| Value   | Decription |
-|---------|------------|
-| h-stack |            |
-| v-stack |            |
+| Value   | Decription                                       |
+|---------|--------------------------------------------------|
+| h-stack | childs elements should be horizontally stacked. |
+| v-stack | childs elements should be vertically stacked.   |
 
 
 ## Live demo
