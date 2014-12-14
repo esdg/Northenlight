@@ -7,7 +7,7 @@
  * Free to use under terms of MIT license
  */
 *{
-	display:block;
+    display:block;
 	margin:0;
 	padding:0;
 	overflow:hidden;
@@ -20,6 +20,10 @@ span, b, i{
     display: inline;
     position: relative;
 }
+script {
+    display: none;
+}
+
 
 .full-size{
      height: 100%;
