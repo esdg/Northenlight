@@ -9,6 +9,8 @@ Stand-alone javascript driven layout positioning library for mobile (Android, iO
 
 Designer friendly. No JavaScript skills needed. Just plain CSS and HTML.
 
+Responsive ready.
+
 ## How does it work?
 Northenlight use javascript to calculate the css position of absolute elements.
 
@@ -73,8 +75,11 @@ Horizontal alignement relatif to his parent.
 ###### nl-canvas
 | Value   | Decription                                       |
 |---------|--------------------------------------------------|
-| h-stack | childs elements should be horizontally stacked. |
-| v-stack | childs elements should be vertically stacked.   |
+| h-stack | childs elements should be horizontally stacked.  |
+| v-stack | childs elements should be vertically stacked.    |
+
+
+## Responsive
 
 
 ## Live demo
