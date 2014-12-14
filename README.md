@@ -1,11 +1,5 @@
 ![Alt text](/logo.png?raw=true "Northenlight")
- 
- 
- 
- 
- 
- 
- 
+<br />
 ## About Northenlight 0.0.1
 Stand-alone javascript driven layout positioning library for mobile (Android, iOS, etc.) and desktop in about 6k minified.
 
