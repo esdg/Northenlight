@@ -40,6 +40,8 @@ The exemple bellow will horizontaly stack p elements inside, and dock the div at
 
 Set every size, margin, padding and styles in the tradidtional css way. Northenlight will use thoses information to fit everything together.
 
+> canvas elements will auto size regarding the size of childs elements
+
 
 ## Documentation
 #### Alignement
