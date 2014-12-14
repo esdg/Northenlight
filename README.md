@@ -33,6 +33,10 @@ The exemple bellow will horizontaly stack p elements inside, and dock at the bot
     <p>third</p>
 </div>
 ```
+
+Set every size, margin, padding and styles in the tradidtional css way. Northenlight will use thoses information to fit everything together.
+
+
 ## Documentation
 #### Alignement
 ```
