@@ -1,6 +1,6 @@
-![Alt text](/logo.png?raw=true "Northenligh")
+![Alt text](/logo.png?raw=true "Northenlight")
 ============
-## About Northenligh
+## About Northenlight
 ## How does it work?
 ## Installation
 
