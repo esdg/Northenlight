@@ -4,12 +4,12 @@
 <br />
 <br />
 <br />
-## About Northenlight 0.0.1
+## About Northenlight 0.0.2
 Stand-alone javascript driven layout positioning library for mobile (Android, iOS, etc.) and desktop in about 6k minified.
 
 Designer friendly. No JavaScript skills needed. Just plain CSS and HTML.
 
-Responsive ready.
+0.0.2 : Responsive ready.
 
 ## How does it work?
 Northenlight use javascript to calculate the css position of absolute elements.
