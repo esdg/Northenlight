@@ -34,12 +34,18 @@ main{
     width: 248px;
     height: 151px;
 }
-@media (max-width : 380px) {
-    #big-logo{
-        width: 170px;
-        height: 104px;
+    @media (max-width : 640px) {
+        #big-logo{
+            width: 200px;
+            height: 122px;
+        }
     }
-}
+    @media (max-width : 510px) {
+        #big-logo{
+            width: 170px;
+            height: 104px;
+        }
+    }
 
 /* Buttons */
 .nav-small-btn{
@@ -66,14 +72,22 @@ main{
     line-height: 210px;
     text-decoration: none;
 }
-@media (max-width : 380px) {
-    .bigicon,.bigicon:hover{
-        width: 93px;
-        height: 102px;
-        font-size: 15px;
-        line-height: 90px;
+    @media (max-width : 640px) {
+        .bigicon,.bigicon:hover{
+            width: 150px;
+            height: 165px;
+            font-size: 20px;
+            line-height: 140px;
+        }
     }
-}
+    @media (max-width : 510px) {
+        .bigicon,.bigicon:hover{
+            width: 93px;
+            height: 102px;
+            font-size: 15px;
+            line-height: 90px;
+        }
+    }
 .nav-social-btn{
     margin-left: 4px;
     margin-right: 4px;
@@ -145,14 +159,20 @@ main{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-@media (max-width : 380px) {
-    .icone-shutter{
-        margin-top: 7px;
-        margin-bottom: 7px;
-        width: 25px;
-        height: 25px;
+    @media (max-width : 640px) {
+        .icone-shutter{
+            margin-top: 7px;
+            margin-bottom: 7px;
+            width: 30px;
+            height: 30px;
+        }
     }
-}
+    @media (max-width : 510px) {
+        .icone-shutter{
+            width: 25px;
+            height: 25px;
+        }
+    }
 
 
 /* NAV */
@@ -160,12 +180,18 @@ main{
     margin-top: 60px;
     margin-bottom: 60px;
 }
-@media (max-width : 380px) {
-    #home-nav{
-        margin-top: 20px;
-        margin-bottom: 20px;
+    @media (max-width : 640px) {
+        #home-nav{
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
     }
-}
+    @media (max-width : 510px) {
+        #home-nav{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    }
 
 #medium-nav{
     padding-top: 8px;
@@ -173,11 +199,11 @@ main{
 #social-nav{
     margin-left: 69px;
 }
-@media (max-width : 768px) {
-    #social-nav{
-        margin-left: 280px;
+    @media (max-width : 768px) {
+        #social-nav{
+            margin-left: 280px;
+        }
     }
-}
 #container p{
     font-family: 'Fjalla One', sans-serif;
     font-size: 30px;
@@ -186,12 +212,17 @@ main{
     text-align: center;
     text-transform: uppercase;
 }
-@media (max-width : 380px) {
-    #container p{
-        font-size: 17px;
-        width: 250px;
+    @media (max-width : 640px) {
+        #container p{
+            font-size: 25px;
+            width: 250px;
+        }
     }
-}
+    @media (max-width : 510px) {
+        #container p{
+            font-size: 17px;
+        }
+    }
 
 
 
